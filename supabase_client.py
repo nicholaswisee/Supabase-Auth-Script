@@ -1,9 +1,6 @@
 import os
-from pdb import main
 from supabase import create_client, Client
 from dotenv import load_dotenv
-import json
-
 
 # Load Supabase Credentials
 load_dotenv()
