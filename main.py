@@ -2,14 +2,18 @@ import json
 from supabase_client import supabase
 
 def main():
-  with open("example.json", "r") as file:
+  with open("./data/bcc.json", "r") as file:
     users = json.load(file)
   
   for user in users:
-    response = supabase.auth.sign_up(
+    response = supabase.auth.admin.create_user(
       {
         "email": user["email"],
         "password": user["password"],
+        "email_confirm": True,
+        "user_metadata": {
+          "display_name": user['team_name']
+        }
       }
     )
     

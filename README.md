@@ -49,5 +49,8 @@ Edit `main.py` and `supabase_client.py` to configure your Supabase credentials a
 python main.py
 ```
 
-## License
-MIT
+## Notes
+
+- This was made with the "Display name" column for the auth user being a team name, based on personal usage. Customize to your own liking.
+- Access SUPABASE_URL from Project Settings -> Data API -> Project URL
+- Access SUPABASE_KEY from Project Settings -> API Keys -> Service Role (must be service_role for admin permissions)

@@ -2,10 +2,11 @@
   {
     "email": "user1@email.com",
     "password": "user1password",
-    "display": "User One"
+    "team_name": "teamone"
   },
   {
     "email": "user2@email.com",
-    "password": "user2password"
+    "password": "user2password",
+    "team_name": "teamtwo"
   }
 ]
